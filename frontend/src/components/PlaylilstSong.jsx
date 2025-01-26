@@ -3,7 +3,7 @@ import { useContext, useState, useRef } from "react";
 import axios from 'axios'
 import { SongContext } from "../Context/SongContext";
 import { decodeToken } from "react-jwt";
-import musicbg from "/src/assets/musicbg.jpg";
+import musicbg from "../assets/musicbg.jpg";
 import { useNavigate } from "react-router-dom";
 import {CgRemoveR} from 'react-icons/cg'
 import { FetchContext } from "../Context/FetchContext";
