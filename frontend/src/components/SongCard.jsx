@@ -15,7 +15,7 @@ import { QueueContext } from "../Context/QueueContex";
 //Importing icons
 import { SlOptionsVertical } from "react-icons/sl";
 import { MdDeleteOutline,MdOutlinePlaylistAdd,MdQueuePlayNext} from 'react-icons/md'
-import musicbg from "../assets/musicbg.jpg";
+import musicbg from "/src/assets/musicbg.jpg";
 
 
 const SongCard = ({ title, artistName, songSrc, userId, songId, file }) => {
