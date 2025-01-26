@@ -5,8 +5,6 @@ dontenv.config();
 
 // Create a new MongoClient
 const client = new MongoClient(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
 });
 
 const conn = await client.connect();
