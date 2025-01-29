@@ -129,7 +129,7 @@ const MusicPlayer = () => {
       <audio ref={audioRef} preload="auto">
         <source
           ref={sourceRef}
-          src={`/api/v1/stream/4979f9de26aadec57449c4690ab0ad60`}
+          src={`https://music-app-e9rm.onrender.com/api/v1/stream/4979f9de26aadec57449c4690ab0ad60`}
           type="audio/mpeg"
         />
       </audio>
