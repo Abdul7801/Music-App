@@ -29,7 +29,7 @@ mongoose.connect(process.env.MONGO_URI, {
   .catch(err => console.error('MongoDB connection error:', err));
 
 // Serve static files from the 'public' directory
-app.use(express.static(path.join(path.resolve(), 'frontend')));
+app.use(express.static(path.join(path.resolve(), 'dist')));
 
 // Routes
 app.use("/api/v1/auth", authRoutes);
@@ -40,7 +40,7 @@ app.get('/api/v1/songs', getSongs);
 
 // Fallback to index.html for SPA
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve('frontend/dist/index.html'));
+  res.sendFile(path.resolve('dist/index.html'));
 });
 
 // Start the server
