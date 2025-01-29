@@ -21,7 +21,7 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch(`${__URL__}/api/v1/auth/register`, {
+    const res = await fetch(`${__URL__}/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
