@@ -36,7 +36,7 @@ const PlaylilstSong = ({ title, artistName, songSrc ,playlistId }) => {
 
   const removeSong = async () => {
     const { data,status } = await axios.delete(
-      `/api/v1/playlist/remove/${playlistId}?song=${title}`,
+      `https://music-app-e9rm.onrender.com/api/v1/playlist/remove/${playlistId}?song=${title}`,
       {
         headers,
       }
