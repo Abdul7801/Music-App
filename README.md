@@ -1,20 +1,21 @@
 # 🎵 Music Player Web App
 
 ## 📌 Overview
-This is a **music player web app** built using the **MERN stack** (MongoDB, Express, React, Node.js). The app allows users to browse music, create playlists, and play their favorite songs. It integrates with the **Spotify API** for fetching music data and uses **Redux** for state management. The app is hosted on **Render**.
+This is a **music player web app** built using the **MERN stack** (MongoDB, Express, React, Node.js). The app allows users to browse music, create playlists, and play their favorite songs. It integrates with the **Spotify API** for fetching music data, uses **Redux** for state management, and **JWT (JSON Web Tokens)** for user authentication. The app is hosted on **Render**.
 
 ## 🛠️ Technologies Used
-- **MongoDB** – For database management
-- **Express** – For backend server and API
-- **React.js** – For building the user interface
-- **Node.js** – For backend logic
-- **Redux** – For state management
-- **Tailwind CSS** – For styling
-- **Spotify API** – For fetching music data
+- **MongoDB** – For database management  
+- **Express** – For backend server and API  
+- **React.js** – For building the user interface  
+- **Node.js** – For backend logic  
+- **Redux** – For state management  
+- **Tailwind CSS** – For styling  
+- **Spotify API** – For fetching music data  
+- **JWT (JSON Web Tokens)** – For user authentication  
 - **Render** – For hosting the app online
 
 ## 🎯 Features
-✅ **User authentication** – Sign up, log in, and manage user sessions  
+✅ **User authentication** – Sign up, log in, and manage user sessions using JWT  
 ✅ **Music library management** – Add and remove music from personal library  
 ✅ **Playlist creation** – Create and organize custom playlists  
 ✅ **Music playback** – Stream songs directly from the app  
@@ -34,6 +35,7 @@ This is a **music player web app** built using the **MERN stack** (MongoDB, Expr
 │   ├── controllers/     # API controllers
 │   ├── routes/          # API routes
 │   ├── models/          # MongoDB models
+│   ├── middleware/      # JWT authentication middleware
 │── package.json         # Dependencies & scripts for both frontend and backend
 │── .env                 # API keys and environment variables
 │── README.md            # Project documentation
@@ -60,9 +62,10 @@ This is a **music player web app** built using the **MERN stack** (MongoDB, Expr
    npm install
    ```  
 4. **Set up the backend**  
-   - Create a `.env` file in the backend folder and add your Spotify API key and MongoDB connection string:  
+   - Create a `.env` file in the backend folder and add your Spotify API key, JWT secret, and MongoDB connection string:  
    ```
    REACT_APP_SPOTIFY_API_KEY=your_spotify_api_key_here
+   JWT_SECRET=your_jwt_secret_here
    MONGODB_URI=your_mongo_db_connection_string_here
    ```  
 5. **Run the app**  
@@ -79,7 +82,7 @@ This is a **music player web app** built using the **MERN stack** (MongoDB, Expr
 6. Open `http://localhost:3000/` in your browser.  
 
 ## 📸 Screenshots
-![Music Stream](https://github.com/user-attachments/assets/c7730bab-e05b-4045-9b93-ce287ed45991)
+![Music Stream](https://github.com/user-attachments/assets/003106b3-3560-4886-aaf5-a46a48e7ac8c)
 
 
 ## 🔗 Live Demo
